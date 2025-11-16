@@ -1,162 +1,133 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nour El Houda Trabelsi - Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f7f7f7;
-            color: #333;
-        }
-        header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 30px 20px;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2em;
-        }
-        header p {
-            margin: 5px 0 0 0;
-            font-size: 1.1em;
-        }
-        .container {
-            width: 90%;
-            max-width: 1000px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: white;
-            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-        }
-        h2 {
-            border-bottom: 2px solid #4CAF50;
-            padding-bottom: 5px;
-            color: #4CAF50;
-        }
-        ul {
-            list-style-type: none;
-            padding-left: 0;
-        }
-        li {
-            margin-bottom: 10px;
-        }
-        a {
-            color: #4CAF50;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .section {
-            margin-bottom: 30px;
-        }
-        .contact-info p {
-            margin: 5px 0;
-        }
-        .skills span {
-            display: inline-block;
-            background-color: #e0e0e0;
-            padding: 5px 10px;
-            margin: 5px 5px 0 0;
-            border-radius: 5px;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nour El Houda Trabelsi - Portfolio</title>
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0; padding: 0; background: #f4f4f9; color: #333;
+    }
+    header {
+        background: linear-gradient(135deg,#4CAF50,#2E7D32);
+        color: #fff;
+        padding: 50px 20px;
+        text-align: center;
+    }
+    header h1 { margin: 0; font-size: 2.5em; }
+    header p { font-size: 1.2em; margin-top: 10px; }
+    .container { max-width: 1000px; margin: 30px auto; padding: 0 20px; }
+    h2 { color: #2E7D32; border-bottom: 3px solid #4CAF50; display: inline-block; padding-bottom: 5px; margin-bottom: 20px; }
+    .section { margin-bottom: 40px; }
+    .skills span {
+        display: inline-block;
+        background: #e0f2f1;
+        color: #00796b;
+        padding: 8px 12px;
+        margin: 5px 5px 0 0;
+        border-radius: 20px;
+        font-weight: bold;
+        font-size: 0.95em;
+    }
+    .projects .project {
+        background: #fff;
+        border-left: 5px solid #4CAF50;
+        padding: 15px 20px;
+        margin-bottom: 15px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .projects .project a {
+        display: inline-block;
+        margin-top: 8px;
+        background: #4CAF50;
+        color: #fff;
+        padding: 6px 12px;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+    .projects .project a:hover { background: #2E7D32; }
+    .contact a { color: #4CAF50; text-decoration: none; }
+    .contact a:hover { text-decoration: underline; }
+</style>
 </head>
 <body>
-    <header>
-        <h1>Nour El Houda Trabelsi</h1>
-        <p>Étudiante en Business Computing – Business Information System</p>
-    </header>
 
-    <div class="container">
-        <!-- Contact -->
-        <div class="section contact-info">
-            <h2>Contact</h2>
-            <p>Téléphone : +216-20-768-631</p>
-            <p>Email : <a href="mailto:nourelhouda.trabelsi132@gmail.com">nourelhouda.trabelsi132@gmail.com</a></p>
-            <p>LinkedIn : <a href="https://www.linkedin.com/in/trabelsi-nour-el-houda-732ba5302" target="_blank">mon profil</a></p>
-            <p>Localisation : Tunis, Tunisie</p>
+<header>
+    <h1>Nour El Houda Trabelsi</h1>
+    <p>Étudiante en Business Computing – BIS | Passionnée par le digital et les technologies</p>
+</header>
+
+<div class="container">
+
+    <!-- Compétences -->
+    <div class="section skills">
+        <h2>Compétences techniques</h2>
+        <p>Programmation :</p>
+        <span>Java</span><span>Python</span><span>SQL</span>
+        <p>Framework / Outils :</p>
+        <span>Spring Boot</span><span>Power BI</span><span>Excel avancé</span>
+        <p>Web :</p>
+        <span>HTML</span><span>CSS</span><span>PHP</span><span>JavaScript</span>
+        <p>ERP / SI :</p>
+        <span>UML</span><span>Gestion de projet</span>
+    </div>
+
+    <!-- Projets GitHub -->
+    <div class="section projects">
+        <h2>Projets GitHub</h2>
+        <div class="project">
+            <strong>biblio</strong> – Java, Application bibliothèque<br>
+            <a href="https://github.com/Nourelhouda632/biblio" target="_blank">Voir le projet</a>
         </div>
-
-        <!-- À propos -->
-        <div class="section">
-            <h2>À propos</h2>
-            <p>Étudiante en 3ème année de Licence Business Information System (BIS), dotée d'une double expertise en Analyse Fonctionnelle et Technologie de l'Information. Forte d'une solide compréhension des processus métiers et de leur optimisation par le numérique. Je recherche un stage engageant au sein d'une structure dynamique, où je pourrai mettre à profit ma rigueur et mes compétences transversales pour contribuer activement à l'amélioration de la performance opérationnelle.</p>
+        <div class="project">
+            <strong>springboot-pipeline</strong> – Java, Pipeline CI/CD<br>
+            <a href="https://github.com/Nourelhouda632/springboot-pipeline" target="_blank">Voir le projet</a>
         </div>
-
-        <!-- Compétences -->
-        <div class="section skills">
-            <h2>Compétences techniques</h2>
-            <p>Programmation :</p>
-            <span>Java</span>
-            <span>Python</span>
-            <span>SQL</span>
-            <p>Outils :</p>
-            <span>Power BI</span>
-            <span>Excel avancé</span>
-            <p>ERP / SI :</p>
-            <span>UML</span>
-            <span>Gestion de projet</span>
-            <p>Web :</p>
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>PHP</span>
-
-            <h2>Langues parlées</h2>
-            <span>Arabe : langue maternelle</span>
-            <span>Français : courant</span>
-            <span>Anglais : intermédiaire</span>
+        <div class="project">
+            <strong>springboot-ci-cd1</strong> – Spring Boot CI/CD<br>
+            <a href="https://github.com/Nourelhouda632/springboot-ci-cd1" target="_blank">Voir le projet</a>
         </div>
-
-        <!-- Expériences & projets -->
-        <div class="section">
-            <h2>Expériences & projets académiques</h2>
-            <ul>
-                <li>
-                    <strong>Développement commercial – Marque artisanale Khomsa perfume</strong><br>
-                    Vente en ligne, gestion des commandes et relation client, création de contenus et stratégies commerciales.
-                </li>
-                <li>
-                    <strong>Développement d’une plateforme de gestion de repas – Nutri Plan</strong><br>
-                    Site web dynamique en PHP/MySQL avec formulaires interactifs, module de recettes filtrables et liste de courses automatique.
-                </li>
-                <li>
-                    <strong>Serenispace – Pods de méditation connectés</strong><br>
-                    Étude de marché, définition du positionnement stratégique, stratégie SEO et marketing digital.
-                </li>
-            </ul>
+        <div class="project">
+            <strong>springboot-ci-cd</strong> – Spring Boot CI/CD<br>
+            <a href="https://github.com/Nourelhouda632/springboot-ci-cd" target="_blank">Voir le projet</a>
         </div>
-
-        <!-- Formation -->
-        <div class="section">
-            <h2>Formation</h2>
-            <ul>
-                <li>Esprit School of Business – Licence Business Computing (2023 – Présent)</li>
-                <li>Lycée Ibnou Abi Dhief – Baccalauréat en Économie et Gestion (2023)</li>
-            </ul>
+        <div class="project">
+            <strong>myproject</strong> – Projet privé (non public)
         </div>
-
-        <!-- Centres d’intérêt -->
-        <div class="section">
-            <h2>Centres d’intérêt</h2>
-            <p>Entrepreneuriat, Nouvelles technologies, Développement personnel, Sport, Voyages & découverte culturelle</p>
-        </div>
-
-        <!-- Certifications -->
-        <div class="section">
-            <h2>Certifications</h2>
-            <ul>
-                <li>Inside LVMH Operations & Supply Chain, Retail & Client Experience Certificate – en cours</li>
-                <li>Honoris sustainability, work ethics & gender equity certificate – 2024</li>
-                <li>Soliya’s Connect Program – 2024</li>
-            </ul>
+        <div class="project">
+            <strong>bis6-test</strong> – Projet académique privé
         </div>
     </div>
+
+    <!-- Expériences -->
+    <div class="section">
+        <h2>Expériences & Projets académiques</h2>
+        <ul>
+            <li><strong>Khomsa perfume – Développement commercial</strong> : Vente en ligne, gestion clients, marketing digital.</li>
+            <li><strong>Nutri Plan – Plateforme de gestion de repas</strong> : PHP/MySQL, site web dynamique, formulaires interactifs.</li>
+            <li><strong>Serenispace – Pods de méditation connectés</strong> : Étude marché, marketing digital, stratégie SEO.</li>
+        </ul>
+    </div>
+
+    <!-- Formation -->
+    <div class="section">
+        <h2>Formation</h2>
+        <ul>
+            <li>Esprit School of Business – Licence Business Computing (2023 – Présent)</li>
+            <li>Lycée Ibnou Abi Dhief – Baccalauréat Économie et Gestion (2023)</li>
+        </ul>
+    </div>
+
+    <!-- Contact -->
+    <div class="section contact">
+        <h2>Contact</h2>
+        <p>Email : <a href="mailto:nourelhouda.trabelsi132@gmail.com">nourelhouda.trabelsi132@gmail.com</a></p>
+        <p>LinkedIn : <a href="https://www.linkedin.com/in/trabelsi-nour-el-houda-732ba5302/" target="_blank">mon profil</a></p>
+        <p>Téléphone : +216-20-768-631</p>
+        <p>Localisation : Tunis, Tunisie</p>
+    </div>
+
+</div>
 </body>
 </html>
